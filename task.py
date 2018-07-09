@@ -1,8 +1,8 @@
 import time
-
 from celery import Celery
 
 app = Celery("task", broker="pyamqp://guest@localhost//")
+
 
 # extract the time consuming portion of code and place it into
 # a separate block
@@ -13,6 +13,7 @@ def sleep_asynchronously():
     execute to completion.
     """
     time.sleep(20)
+
 
 print("Let's begin!")
 
