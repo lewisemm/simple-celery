@@ -1,5 +1,9 @@
-# Ignore compiled python files
+# Ignore generated python files
 *.pyc
+__pycache__
 
 # Ignore virtualenv
 simple-env
+
+# Ignore celery schedule database
+celerybeat-schedule
