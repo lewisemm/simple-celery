@@ -46,6 +46,6 @@ def birthdays_today():
 app.conf.beat_schedule = {
     "birthday-task": {
         "task": "birthdays.birthdays_today",
-        "schedule": crontab(hour=20, minute=15)
+        "schedule": crontab(hour=7, minute=0)
     }
 }
