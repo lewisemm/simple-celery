@@ -20,6 +20,11 @@ def birthdays_today():
 
     today = datetime.datetime.now()
 
+    # Update November 2020: Do not execute queries in the manner shown
+    # below (especially in a production environment).
+    # This method of querying will introduce an SQL Injection
+    # vulnerability in your code.
+    # Please read https://bobby-tables.com/python for more info.
     query = """SELECT first_name, last_name FROM employees
     WHERE month(birth_date)={0} and day(birth_date)={1};""".format(
         today.month, today.day)
