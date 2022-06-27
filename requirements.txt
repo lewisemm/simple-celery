@@ -2,7 +2,7 @@ amqp==2.3.2
 billiard==3.5.0.4
 celery==4.2.0
 kombu==4.2.1
-mysql-connector-python==8.0.11
+mysql-connector-python==8.0.14
 protobuf==3.6.0
 pytz==2018.5
 six==1.11.0
